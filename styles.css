@@ -28,8 +28,8 @@
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
-    background: var(--white);
+    color: var(--white);
+    background: var(--dark-bg);
   }
   
   img {
@@ -57,7 +57,7 @@
     font-weight: 800;
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   /* ============================================
@@ -90,13 +90,13 @@
   }
   
   .btn-secondary {
-    background: var(--white);
-    color: var(--text-dark);
+    background: transparent;
+    color: var(--white);
     border: 2px solid var(--primary-green);
   }
   
   .btn-secondary:hover {
-    background: var(--light-green);
+    background: var(--primary-green);
     transform: translateY(-2px);
   }
   
@@ -113,8 +113,8 @@
      HEADER
      ============================================ */
   .header {
-    background: var(--white);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: var(--dark-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -130,7 +130,7 @@
   .logo h1 {
     font-size: 1.75rem;
     font-weight: 800;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .logo h1 span {
@@ -152,7 +152,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background: var(--text-dark);
+    background: var(--white);
     transition: all 0.3s ease;
     border-radius: 2px;
   }
@@ -166,7 +166,7 @@
   
   .nav-menu a {
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--white);
     transition: color 0.3s ease;
   }
   
@@ -188,8 +188,8 @@
       max-width: 300px;
       height: calc(100vh - 70px);
       flex-direction: column;
-      background: var(--white);
-      box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+      background: var(--dark-bg);
+      box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
       padding: 2rem;
       gap: 1.5rem;
       align-items: flex-start;
@@ -222,7 +222,7 @@
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%),
-                url('grimace.png') no-repeat center / cover;
+                url('images/grimace.png') no-repeat center / cover;
     background-blend-mode: overlay;
     color: var(--white);
     padding: 4rem 0;
@@ -291,7 +291,7 @@
      ============================================ */
   .how-it-works {
     padding: 5rem 0;
-    background: var(--light-gray);
+    background: var(--dark-bg);
   }
   
   .steps-grid {
@@ -303,15 +303,15 @@
   .step {
     text-align: center;
     padding: 2rem 1rem;
-    background: var(--white);
+    background: var(--darker-bg);
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .step:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 200, 83, 0.2);
   }
   
   .step-icon {
@@ -331,11 +331,11 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .step p {
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8);
   }
   
   /* ============================================
@@ -343,7 +343,7 @@
      ============================================ */
   .services {
     padding: 5rem 0;
-    background: var(--white);
+    background: var(--darker-bg);
   }
   
   .services-grid {
@@ -353,8 +353,8 @@
   }
   
   .service-card {
-    background: var(--white);
-    border: 1px solid var(--border-color);
+    background: var(--dark-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
@@ -362,8 +362,9 @@
   }
   
   .service-card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 200, 83, 0.2);
     transform: translateY(-5px);
+    border-color: var(--primary-green);
   }
   
   .service-icon {
@@ -383,11 +384,11 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .service-card p {
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8);
   }
   
   /* Featured Service Cards with Images */
@@ -433,7 +434,7 @@
      ============================================ */
   .reviews {
     padding: 5rem 0;
-    background: var(--light-gray);
+    background: var(--dark-bg);
   }
   
   .reviews-grid {
@@ -458,7 +459,7 @@
      ============================================ */
   .contact {
     padding: 5rem 0;
-    background: var(--white);
+    background: var(--darker-bg);
   }
   
   .contact-wrapper {
@@ -472,12 +473,12 @@
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .contact-intro {
     font-size: 1.125rem;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 2rem;
   }
   
@@ -493,13 +494,13 @@
     align-items: center;
     gap: 1rem;
     padding: 1.25rem;
-    background: var(--light-gray);
+    background: var(--dark-bg);
     border-radius: 8px;
     transition: all 0.3s ease;
   }
   
   .contact-method:hover {
-    background: var(--light-green);
+    background: rgba(0, 200, 83, 0.1);
     transform: translateX(5px);
   }
   
@@ -515,12 +516,12 @@
   
   .contact-method strong {
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .contact-method span {
     font-size: 0.95rem;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8);
   }
   
   .social-links {
@@ -548,7 +549,7 @@
   
   /* Quote Form */
   .quote-form-wrapper {
-    background: var(--light-gray);
+    background: var(--dark-bg);
     padding: 2.5rem;
     border-radius: 12px;
   }
@@ -557,7 +558,7 @@
     font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .quote-form {
@@ -574,16 +575,18 @@
   
   .form-group label {
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--white);
   }
   
   .form-group input,
   .form-group textarea {
     padding: 0.875rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
+    background: var(--darker-bg);
+    color: var(--white);
     transition: border-color 0.3s ease;
   }
   
@@ -593,9 +596,14 @@
     border-color: var(--primary-green);
   }
   
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
   .form-group small {
     font-size: 0.875rem;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.7);
   }
   
   .form-group input[type="file"] {
