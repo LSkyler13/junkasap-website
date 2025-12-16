@@ -752,15 +752,3 @@
   text-decoration: none;
   color: inherit;
 }
-
-.site-logo{
-  height: 68px;   /* bigger */
-  width: auto;
-  display: block;
-  object-fit: contain;
-}
-
-@media (max-width: 420px){
-  .site-logo{ height: 60px; }
-}
-
