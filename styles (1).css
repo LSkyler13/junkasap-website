@@ -471,10 +471,13 @@
   }
   
   .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-info {
+    width: 100%;
+    max-width: 760px;
   }
   
   .contact-info h2 {
@@ -509,7 +512,7 @@
   
   .contact-method:hover {
     background: rgba(0, 200, 83, 0.1);
-    transform: translateX(5px);
+    transform: translateY(-2px);
   }
   
   .contact-method i {
@@ -620,8 +623,7 @@
   
   @media (max-width: 992px) {
     .contact-wrapper {
-      grid-template-columns: 1fr;
-      gap: 3rem;
+      justify-content: center;
     }
   }
   

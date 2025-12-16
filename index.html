@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="JunkASAP - Fast, affordable junk removal in Virginia. Text us photos for an instant quote. Same-day service available.">
-  <title>JunkASAP - Fast & Affordable Junk Removal</title>
+  <title>JunkASAP</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/jpg" sizes="32x32" href="images/logo1.jpg">
@@ -16,17 +16,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.fixed.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
 
   <!-- HEADER -->
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <div class="logo">
-          <h1>Junk<span>ASAP</span></h1>
-        </div>
+        <!-- LOGO (image) -->
+        <a href="#home" class="logo-link" aria-label="JunkASAP Home">
+          <img src="images/logo1.jpg" alt="JunkASAP" class="site-logo">
+        </a>
+
         <nav class="nav">
           <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
@@ -52,7 +54,7 @@
       <div class="hero-content">
         <h2>Fast Junk Removal.<br>Unbeatable Prices.</h2>
         <p class="hero-subtitle">Same-day service • Price match guarantee • No hidden fees</p>
-        
+
         <!-- Primary CTA -->
         <div class="cta-buttons">
           <a href="sms:5719778757" class="btn btn-primary btn-lg">
@@ -64,7 +66,7 @@
             Call Now
           </a>
         </div>
-        
+
         <p class="hero-note">📸 Just snap a photo & text it to us. Get your quote in minutes!</p>
       </div>
     </div>
@@ -156,15 +158,14 @@
     </div>
   </section>
 
-  <!-- CONTACT / QUOTE FORM -->
+  <!-- CONTACT -->
   <section id="contact" class="contact">
     <div class="container">
       <div class="contact-wrapper">
-        <!-- Contact Info -->
         <div class="contact-info">
           <h2>Get in Touch</h2>
-          <p class="contact-intro">Text us photos for the fastest quote, or fill out the form and we'll get back to you within 24 hours.</p>
-          
+          <p class="contact-intro">Text us photos for the fastest quote. It’s the quickest way to get pricing fast.</p>
+
           <div class="contact-methods">
             <a href="sms:5719778757" class="contact-method">
               <i class="fas fa-comment-dots"></i>
@@ -197,37 +198,6 @@
               <i class="fab fa-facebook"></i>
             </a>
           </div>
-        </div>
-
-        <!-- Quote Form -->
-        <div class="quote-form-wrapper">
-          <h3>Request a Quote</h3>
-          <form class="quote-form" action="#" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(571) 123-4567" required>
-            </div>
-
-            <div class="form-group">
-              <label for="photos">Upload Photos (Optional)</label>
-              <input type="file" id="photos" name="photos" accept="image/*,video/*" multiple>
-              <small>For faster quotes, text photos to (571) 977-8757</small>
-            </div>
-
-            <div class="form-group">
-              <label for="message">What needs to be removed?</label>
-              <textarea id="message" name="message" rows="4" placeholder="Describe the items or area that needs cleaning..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block">
-              Get Free Quote
-            </button>
-          </form>
         </div>
       </div>
     </div>
